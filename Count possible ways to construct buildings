@@ -1,0 +1,14 @@
+class Solution:
+	def TotalWays(self, n):
+		# Code here
+		# Code here
+		a=0
+		b=1
+		for i in range(n+1):
+		    c=(a+b)%((10**9)+7)
+		    a=b
+		    b=c
+		k=c**2
+		if k>(10**9)+7:
+		    return k%((10**9)+7)
+		return k
