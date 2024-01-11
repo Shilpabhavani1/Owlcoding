@@ -1,0 +1,9 @@
+n=10
+arr=[1]*(n+1)
+for i in range(2,int(n**0.5)+1):
+    if arr[i]==1:
+        for j in range(i*i,n+1,i):
+            arr[j]=0
+for i in range(2,len(arr)):
+    if arr[i]==1:
+        print(i)
